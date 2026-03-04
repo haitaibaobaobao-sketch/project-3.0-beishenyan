@@ -1,0 +1,18 @@
+{
+  "name": "Project 3.0 - Beishenyan",
+  "image": "python:3.11",
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "github.copilot"
+      ]
+    }
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "pip install --upgrade pip"
+}
